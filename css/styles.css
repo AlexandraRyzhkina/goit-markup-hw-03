@@ -22,6 +22,7 @@
     --primary-bg-col: #fff;
     --secondary-bg-col: #f5f4fa;
     --footer-bg-col: #2f303a;
+    --gap-between-coworkers: 30px;
 }
 
 /* index.html */
@@ -31,6 +32,10 @@ body {
     font-weight: 400;
     color: var(--primary-txt-col);
     background-color: var(--primary-bg-col);
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
 }
 
 /* logotype style */
@@ -59,6 +64,7 @@ body {
 .page-header{
     padding-top: 32px;
     padding-bottom: 32px;
+    
 }
 
 .page-header li {
@@ -67,7 +73,7 @@ body {
 
 .site-nav, .header-contacts{
     padding: 0;
-    margin: 0;
+    margin: 0;   
 }
 
 .site-nav a,
@@ -194,6 +200,19 @@ body {
     line-height: 1.86;
     margin: 0;
     padding: 0 0 30px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--gap-between-coworkers));
+    margin-top: calc(-1 * var(--gap-between-coworkers));
+}
+
+.coworkers-list > .coworkers{
+    outline: 1px solid teal;
+    flex-basis: calc(100% / 4 - var(--gap-between-coworkers));
+    margin-left: var(--gap-between-coworkers);
+    margin-top: var(--gap-between-coworkers);
 }
 
 /* футер */
@@ -229,6 +248,7 @@ body {
 }
 
 /* portfolio html */
+
 .works{
     padding-bottom: 94px;
 }
@@ -254,7 +274,7 @@ body {
 
 .button-list {
     margin: 0;
-    padding: 94px 0 50px 0;
+    padding: 0 0 50px 0;
     list-style: none;
 }
 
