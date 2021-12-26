@@ -14,14 +14,14 @@ html{
 /* secondary bg color #F5F4FA */
 /* footer bg color #2F303A */
 
-:root{
+:root {
     --primary-txt-col: #757575;
     --secondary-txt-col: #212121;
     --white-txt-col: #fff;
     --accent-col: #2196f3;
     --primary-bg-col: #fff;
     --secondary-bg-col: #f5f4fa;
-    --footer-bg-col: #2f303a; 
+    --footer-bg-col: #2f303a;
 }
 
 /* index.html */
@@ -41,29 +41,22 @@ body {
     color: var(--secondary-txt-col);
     text-decoration: none;
 }
+
 .logoblue {
     color: var(--accent-col);
-}
-
-.container{
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    outline: solid 2px tomato;
 }
 
 
 /* site nav and header contacts*/
 
-.page-header li{
+.page-header li {
     list-style: none;
 }
 
 .site-nav a,
 .header-contacts a {
     color: var(--secondary-txt-col);
-    line-height: 1,14 ;
+    line-height: 1,14;
     text-decoration: none;
 }
 
@@ -84,9 +77,10 @@ body {
 /* hero+button */
 /* Залит темный фон, чтобы были видны буквы */
 
-.hero{
+.hero {
     background-color: #2F303A;
 }
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -94,119 +88,130 @@ body {
     color: var(--white-txt-col);
 }
 
-.button:hover, .button:focus{
+.button-hero:hover,
+.button-hero:focus {
     background-color: var(--accent-col);
     color: var(--white-txt-col);
-    
+
 }
 
-.button{
+.button-hero {
     cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
 
-    border-radius: 4px;
-    padding: 10px 32px;
+.button-portfolio:hover,
+.button-portfolio:focus {
+    background-color: var(--accent-col);
+    color: var(--white-txt-col);
+}
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 /* преимущества */
 
-.features-list .title{
+.features-list .title {
     font-weight: 700;
     line-height: 1.17;
     color: var(--secondary-txt-col)
 }
 
-.features-list li{
+.features-list li {
     list-style: none;
 }
 
 /* Чем мы занимаемся */
 
-.whatwedo-list li{
+.whatwedo-list li {
     list-style: none;
 }
 
 /* Наша команда */
 
-.section-coworkers{
+.section-coworkers {
     background-color: var(--secondary-bg-col);
 }
 
-.section-title{
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--secondary-txt-col)
 }
 
-.coworkers-list h3{
+.coworkers-list h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     color: var(--secondary-txt-col)
 }
 
-.coworkers-list li{
+.coworkers-list li {
     list-style: none;
 }
 
-.coworkers-list p{
+.coworkers-list p {
     line-height: 1.86;
 }
 
 /* футер */
 /* Залит темный фон, чтобы были видны буквы */
 
-.logowhite{
+.logowhite {
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
     color: var(--white-txt-col);
     text-decoration: none;
 }
-.section-footer{
+
+.section-footer {
     background-color: #2f303a;
     line-height: 1.7;
-    }
+}
 
-.address li{
+.address li {
     list-style: none;
 }
 
-.address a{
+.address a {
     text-decoration: none;
     color: var(--white-txt-col);
 }
 
-.address a:hover, 
-.address a:focus{
+.address a:hover,
+.address a:focus {
     color: var(--accent-col);
 }
 
 /* portfolio html */
 
-.button-list li{
+.button-list li {
     list-style: none;
 }
 
 /* примеры работ */
-.example-list li{
+.example-list li {
     list-style: none;
-    
+
 }
 
-.example-list a{
+.example-list a {
     text-decoration: none;
 }
 
-.example-list .title{
+.example-list .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--secondary-txt-col)
-
 }
 
-.example-list p{
+.example-list p {
     font-size: 16px;
     line-height: 1.86;
     color: var(--primary-txt-col);
