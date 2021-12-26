@@ -1,3 +1,11 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
 /* primary text color grey #757575 */
 /* secondary text color black #212121 */
 /* white text color #fff */
@@ -35,6 +43,14 @@ body {
 }
 .logoblue {
     color: var(--accent-col);
+}
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: solid 2px tomato;
 }
 
 
@@ -86,6 +102,9 @@ body {
 
 .button{
     cursor: pointer;
+
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
 /* преимущества */
