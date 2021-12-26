@@ -1,0 +1,194 @@
+/* primary text color grey #757575 */
+/* secondary text color black #212121 */
+/* white text color #fff */
+/* accent color #2196F3 */
+/* primary bg color  #fff */
+/* secondary bg color #F5F4FA */
+/* footer bg color #2F303A */
+
+:root{
+    --primary-txt-col: #757575;
+    --secondary-txt-col: #212121;
+    --white-txt-col: #fff;
+    --accent-col: #2196f3;
+    --primary-bg-col: #fff;
+    --secondary-bg-col: #f5f4fa;
+    --footer-bg-col: #2f303a; 
+}
+
+/* index.html */
+body {
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-txt-col);
+    background-color: var(--primary-bg-col);
+}
+
+/* logotype style */
+.logo {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--secondary-txt-col);
+    text-decoration: none;
+}
+.logoblue {
+    color: var(--accent-col);
+}
+
+
+/* site nav and header contacts*/
+
+.page-header li{
+    list-style: none;
+}
+
+.site-nav a,
+.header-contacts a {
+    color: var(--secondary-txt-col);
+    line-height: 1,14 ;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-col);
+}
+
+.site-nav .link-current {
+    color: var(--accent-col)
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+    color: var(--accent-col);
+}
+
+/* hero+button */
+/* Залит темный фон, чтобы были видны буквы */
+
+.hero{
+    background-color: #2F303A;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--white-txt-col);
+}
+
+.button:hover, .button:focus{
+    background-color: var(--accent-col);
+    color: var(--white-txt-col);
+    
+}
+
+.button{
+    cursor: pointer;
+}
+
+/* преимущества */
+
+.features-list .title{
+    font-weight: 700;
+    line-height: 1.17;
+    color: var(--secondary-txt-col)
+}
+
+.features-list li{
+    list-style: none;
+}
+
+/* Чем мы занимаемся */
+
+.whatwedo-list li{
+    list-style: none;
+}
+
+/* Наша команда */
+
+.section-coworkers{
+    background-color: var(--secondary-bg-col);
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--secondary-txt-col)
+}
+
+.coworkers-list h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--secondary-txt-col)
+}
+
+.coworkers-list li{
+    list-style: none;
+}
+
+.coworkers-list p{
+    line-height: 1.86;
+}
+
+/* футер */
+/* Залит темный фон, чтобы были видны буквы */
+
+.logowhite{
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white-txt-col);
+    text-decoration: none;
+}
+.section-footer{
+    background-color: #2f303a;
+    line-height: 1.7;
+    }
+
+.address li{
+    list-style: none;
+}
+
+.address a{
+    text-decoration: none;
+    color: var(--white-txt-col);
+}
+
+.address a:hover, 
+.address a:focus{
+    color: var(--accent-col);
+}
+
+/* portfolio html */
+
+.button-list li{
+    list-style: none;
+}
+
+/* примеры работ */
+.example-list li{
+    list-style: none;
+    
+}
+
+.example-list a{
+    text-decoration: none;
+}
+
+.example-list .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--secondary-txt-col)
+
+}
+
+.example-list p{
+    font-size: 16px;
+    line-height: 1.86;
+    color: var(--primary-txt-col);
+}
