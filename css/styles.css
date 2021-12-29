@@ -32,6 +32,7 @@ body {
     font-weight: 400;
     color: var(--primary-txt-col);
     background-color: var(--primary-bg-col);
+    letter-spacing: 0.03em;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -71,15 +72,13 @@ h1, h2, h3, h4, h5, h6, p{
     list-style: none;
 }
 
-.site-nav, .header-contacts{
-    padding: 0;
-    margin: 0;   
+.site-nav a{
+    color: var(--secondary-txt-col);
+    text-decoration: none;
 }
 
-.site-nav a,
 .header-contacts a {
-    color: var(--secondary-txt-col);
-    line-height: 1,14;
+    color: var(--primary-txt-col);
     text-decoration: none;
 }
 
@@ -92,6 +91,16 @@ h1, h2, h3, h4, h5, h6, p{
 
 .site-nav .link-current {
     color: var(--accent-col)
+}
+
+.site-nav,
+.header-contacts {
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -109,34 +118,33 @@ h1, h2, h3, h4, h5, h6, p{
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
     color: var(--white-txt-col);
+    text-transform: uppercase;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+
     margin: 0 auto 30px auto;
     
 }
 
-.button-hero:hover,
-.button-hero:focus {
-    background-color: var(--accent-col);
-    color: var(--white-txt-col);
-
-}
-
 .button-hero {
-
     cursor: pointer;
-
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
     border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    text-align: center;
 
     border-style: none;
     border-color: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    background-color: var(--accent-col);
+    color: var(--white-txt-col);
 }
+
 
 
 
@@ -147,16 +155,23 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
-.features-list{
+.features-list li{
+    list-style: none;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .features-list .title {
     font-weight: 700;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     color: var(--secondary-txt-col);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
     margin: 0 0 10px 0;
 }
 
@@ -178,26 +193,40 @@ h1, h2, h3, h4, h5, h6, p{
     text-align: center;
 }
 
-.whatwedo-list{
+.whatwedo-list li{
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
 /* Наша команда */
+.section-coworkers {
+    background-color: var(--secondary-bg-col);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--secondary-txt-col);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
 .coworkers-list .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     color: var(--secondary-txt-col);
+
     margin: 0;
     padding: 30px 0 10px 0;
 }
 
-.coworkers-list {
+.coworkers-list li{
     list-style: none;
-    line-height: 1.86;
+    line-height: 1.17;
     margin: 0;
     padding: 0 0 30px 0;
 
@@ -224,26 +253,40 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: 700;
     color: var(--white-txt-col);
     text-decoration: none;
+    line-height: 1.19;
 }
 
 .section-footer {
     background-color: #2f303a;
+}
+
+.address-cont li {
+    list-style: none;
+    line-height: 1.7;
+
+}
+
+.address a {
+    text-decoration: none;
+    color: var(--white-txt-col);
+    font-style: normal;
     line-height: 1.7;
 }
 
-.address {
-    list-style: none;
+.address-cont a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-cont {
     margin: 0;
     padding: 0;
 }
 
-.address a{
-    text-decoration: none;
-    color: var(--white-txt-col);
-}
-
 .address a:hover,
-.address a:focus {
+.address a:focus,
+.address-cont a:hover,
+.address-cont a:focus {
     color: var(--accent-col);
 }
 
@@ -257,29 +300,37 @@ h1, h2, h3, h4, h5, h6, p{
 .button-portfolio:focus {
     background-color: var(--accent-col);
     color: var(--white-txt-col);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-portfolio {
     cursor: pointer;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.62;
+
+    letter-spacing: 0.03em;
     border-radius: 4px;
-    padding: 6px 22px;
 
     border-style: none;
     border-color: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    background-color: var(--secondary-bg-col);
+    color: var(--secondary-txt-col);
 
 }
 
-.button-list {
+.button-list li{
     margin: 0;
     padding: 0 0 50px 0;
     list-style: none;
 }
 
 /* примеры работ */
-.example-list{
+.example-list li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -308,6 +359,8 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 18px;
     line-height: 2;
     color: var(--secondary-txt-col);
+    letter-spacing: 0.06em;
+
     margin: 0;
     padding: 0;
     /* margin-bottom: 4px; */
@@ -317,6 +370,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 16px;
     line-height: 1.86;
     color: var(--primary-txt-col);
+    
     margin: 0;
     padding: 0:
 }
