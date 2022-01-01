@@ -22,7 +22,7 @@
     --primary-bg-col: #fff;
     --secondary-bg-col: #f5f4fa;
     --footer-bg-col: #2f303a;
-    --gap-between-coworkers: 30px;
+    --gap: 30px;
 }
 
 /* index.html */
@@ -35,7 +35,14 @@ body {
     letter-spacing: 0.03em;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -67,7 +74,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     outline: solid 2px tomato;
 }
 
-.page-header{
+.page-header {
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -76,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     list-style: none;
 }
 
-.site-nav a{
+.site-nav a {
     color: var(--secondary-txt-col);
     text-decoration: none;
 }
@@ -103,23 +110,47 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.02em;
     font-weight: 500;
 
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
+}
 
+.container-header {
+    display: flex;
+    flex-basis: 100%/3;
+    align-items: center;
+
+}
+
+.container-header,
+.container-head-cont{
+    display: flex;
+}
+
+.navlogobox, .navbox, .headerbox{
+    display:flex;
+}
+
+/* .navlogobox{
+    margin-right: 93px;
+} */
+
+.site-nav{
+    flex-wrap: wrap;
+    margin-right: 93px
+    
 }
 
 .site-nav-item{
-    outline: 1px solid teal;
-    flex-basis: calc(100%/3 - 50px);
+    flex-basis: 100%/3;
     margin-left: 50px;
+}
 
+.header-contacts {
+    flex-wrap: wrap;
+    margin-left: 331px;
 }
 
 .header-contacts-item{
-    outline: 1px solid teal;
-    flex-basis: calc(100%/4 - 30px);
-    margin-left: 30px;
+    flex-basis: 100%/2;
+    margin-right: 50px;
 }
 
 
@@ -138,11 +169,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--white-txt-col);
     text-transform: uppercase;
     line-height: 1.36;
-    
+
     letter-spacing: 0.06em;
 
     margin: 0 auto 28px auto;
-    
+
 }
 
 .button-hero {
@@ -165,22 +196,22 @@ h1, h2, h3, h4, h5, h6, p, ul {
     min-width: 200px;
     height: 50px;
     text-align: center;
-    
+
 }
 
 
 /* преимущества */
 /* ДЛЯ ВСЕХ СЕКЦИЙ МОЖНО ЗАДАТЬ СРЕДНЕЕ ЗНАЧЕНИЕ Паддинг? */
-.section{
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.features-list{
+.features-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    
+    margin-left: calc(-1 * var(--gap));
+
 }
 
 .features-list-item {
@@ -191,8 +222,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 
     outline: 1px solid teal;
-    flex-basis: calc(100%/4 - 30px);
-    margin-left: 30px;
+    flex-basis: calc(100%/4 - var(--gap));
+    margin-left: var(--gap);
 }
 
 .features-list .title {
@@ -209,20 +240,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Чем мы занимаемся */
 
-.whatwedo-list{
+.whatwedo-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-left: calc(-1 * var(--gap));
 
 }
 
-.whatwedo-list-item{
+.whatwedo-list-item {
     padding: 0;
     list-style: none;
 
     outline: 1px solid teal;
-    flex-basis: calc(100%/3 - 30px);
-    margin-left: 30px;
+    flex-basis: calc(100%/3 - var(--gap));
+    margin-left: var(--gap);
 }
 
 /* Наша команда */
@@ -251,22 +282,22 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 30px 0 10px 0;
 }
 
-.coworkers-list{
+.coworkers-list {
     list-style: none;
     line-height: 1.17;
-    
+
     padding: 0;
-    margin:0;
+    margin: 0;
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-left: calc(-1 * var(--gap));
 }
 
-.coworkers-list-item{
+.coworkers-list-item {
     outline: 1px solid teal;
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
+    flex-basis: calc(100% / 4 - var(--gap));
+    margin-left: var(--gap);
 }
 
 /* футер */
@@ -304,7 +335,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .address-cont {
-    
+
     padding: 0;
 }
 
@@ -317,7 +348,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* portfolio html */
 
-.works{
+.works {
     padding-bottom: 94px;
 }
 
@@ -326,8 +357,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--accent-col);
     color: var(--white-txt-col);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-portfolio {
@@ -352,57 +383,56 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-align: center;
 }
 
-.button-list{
+.button-list {
     margin-bottom: 50px;
     list-style: none;
 
     display: flex;
     flex-wrap: wrap;
     margin-left: -8px;
-    
+
 }
 
-.button-list-item{
+.button-list-item {
     outline: 1px solid teal;
     flex-basis: calc(100% / 5 - 8px);
     margin-left: 8px;
+    text-align: center;
+
 }
 
 /* примеры работ */
-/* .section-no-padding{
-    padding: 0;
-} */
+
 
 .example-list {
     display: flex;
     flex-wrap: wrap;
 
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin-left: calc(-1 * var(--gap));
+    margin-bottom: calc(-1 * var(--gap));
 
 }
 
-.ex-list-item{
-    list-style: none ;
+.ex-list-item {
+    list-style: none;
     outline: 1px solid teal;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - var(--gap));
 
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
-    list-style: none;   
+    margin-left: var(--gap);
+    margin-bottom: var(--gap);
+
+    list-style: none;
 }
 
 
-.example-list-link{
+.example-list-link {
     margin-bottom: 20px;
 }
-
 
 .example-list a {
     display: inline-block;
     text-decoration: none;
-    
+
 }
 
 .example-list .title {
@@ -415,7 +445,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--secondary-txt-col);
     letter-spacing: 0.06em;
 
-    
+
     padding: 0;
     /* margin-bottom: 4px; */
 }
@@ -424,7 +454,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-size: 16px;
     line-height: 1.86;
     color: var(--primary-txt-col);
-    
-    
+
     padding: 0:
 }
