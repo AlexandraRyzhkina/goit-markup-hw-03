@@ -369,22 +369,27 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* примеры работ */
+/* .section-no-padding{
+    padding: 0;
+} */
+
 .example-list {
     display: flex;
     flex-wrap: wrap;
+
     margin-left: -30px;
     margin-bottom: -30px;
 
 }
 
-.example-list-item{
+.ex-list-item{
     list-style: none ;
     outline: 1px solid teal;
     flex-basis: calc(100% / 3 - 30px);
+
     margin-left: 30px;
     margin-bottom: 30px;
-
-    padding: 0;
+    
     list-style: none;   
 }
 
