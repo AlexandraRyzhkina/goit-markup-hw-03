@@ -35,8 +35,10 @@ body {
     letter-spacing: 0.03em;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 /* logotype style */
@@ -46,6 +48,9 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: 700;
     color: var(--secondary-txt-col);
     text-decoration: none;
+    line-height: 1.17;
+
+    margin-right: 93px;
 }
 
 .logoblue {
@@ -55,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p{
 /* site nav and header contacts*/
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 
@@ -63,9 +68,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .page-header{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-header li {
@@ -99,8 +103,23 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: 0.02em;
     font-weight: 500;
 
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+}
+
+.site-nav-item{
+    outline: 1px solid teal;
+    flex-basis: calc(100%/3 - 50px);
+    margin-left: 50px;
+
+}
+
+.header-contacts-item{
+    outline: 1px solid teal;
+    flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
 }
 
 
@@ -108,23 +127,21 @@ h1, h2, h3, h4, h5, h6, p{
 /* Залит темный фон, чтобы были видны буквы */
 
 .hero {
-    background-color: #2F303A;
     text-align: center;
-    margin: 0 auto;
-    padding-top: 210px;
-    padding-bottom: 190px;
 }
 
 .hero-title {
+    background-color: #2F303A;
+
     font-weight: 900;
     font-size: 44px;
     color: var(--white-txt-col);
     text-transform: uppercase;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
 
-    margin: 0 auto 30px auto;
+    margin: 0 auto 28px auto;
     
 }
 
@@ -143,25 +160,39 @@ h1, h2, h3, h4, h5, h6, p{
 
     background-color: var(--accent-col);
     color: var(--white-txt-col);
+
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    
 }
-
-
 
 
 /* преимущества */
 /* ДЛЯ ВСЕХ СЕКЦИЙ МОЖНО ЗАДАТЬ СРЕДНЕЕ ЗНАЧЕНИЕ Паддинг? */
 .section{
-    padding: 94px 15px;
-    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.features-list li{
+.features-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    
+}
+
+.features-list-item {
     list-style: none;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-    margin: 0;
     padding: 0;
+
+    outline: 1px solid teal;
+    flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
 }
 
 .features-list .title {
@@ -175,33 +206,28 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 0 10px 0;
 }
 
-.features-list p{
-    margin: 0;
-    padding: 0;
-}
-
 
 /* Чем мы занимаемся */
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    color: var(--secondary-txt-col);
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
+.whatwedo-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
 }
 
-.whatwedo-list li{
-    margin: 0;
+.whatwedo-list-item{
     padding: 0;
-
     list-style: none;
+
+    outline: 1px solid teal;
+    flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
 }
 
 /* Наша команда */
-.section-coworkers {
+
+.section:nth-child(5) {
     background-color: var(--secondary-bg-col);
 }
 
@@ -212,6 +238,8 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--secondary-txt-col);
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
 }
 
 .coworkers-list .title {
@@ -220,28 +248,25 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 1.17;
     color: var(--secondary-txt-col);
 
-    margin: 0;
     padding: 30px 0 10px 0;
 }
 
-.coworkers-list li{
+.coworkers-list{
     list-style: none;
     line-height: 1.17;
-    margin: 0;
-    padding: 0 0 30px 0;
+    
+    padding: 0;
+    margin:0;
 
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: calc(-1 * var(--gap-between-coworkers));
-    margin-top: calc(-1 * var(--gap-between-coworkers));
+    margin-left: -30px;
 }
 
-.coworkers-list > .coworkers{
+.coworkers-list-item{
     outline: 1px solid teal;
-    flex-basis: calc(100% / 4 - var(--gap-between-coworkers));
-    margin-left: var(--gap-between-coworkers);
-    margin-top: var(--gap-between-coworkers);
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
 
 /* футер */
@@ -253,7 +278,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: 700;
     color: var(--white-txt-col);
     text-decoration: none;
-    line-height: 1.19;
+    line-height: 1.17;
 }
 
 .section-footer {
@@ -279,7 +304,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .address-cont {
-    margin: 0;
+    
     padding: 0;
 }
 
@@ -321,34 +346,58 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: var(--secondary-bg-col);
     color: var(--secondary-txt-col);
 
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    text-align: center;
 }
 
-.button-list li{
-    margin: 0;
-    padding: 0 0 50px 0;
+.button-list{
+    margin-bottom: 50px;
     list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    
+}
+
+.button-list-item{
+    outline: 1px solid teal;
+    flex-basis: calc(100% / 5 - 8px);
+    margin-left: 8px;
 }
 
 /* примеры работ */
-.example-list li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-       
-}
-.example-list-link{
-    margin-bottom: 20px;
+.example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+
 }
 
-.ex {
-    margin: 0 0 30px 0;
+.example-list-item{
+    list-style: none ;
+    outline: 1px solid teal;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    padding: 0;
+    list-style: none;   
+}
+
+
+.example-list-link{
+    margin-bottom: 20px;
 }
 
 
 .example-list a {
     display: inline-block;
     text-decoration: none;
-    margin: 0;
+    
 }
 
 .example-list .title {
@@ -361,7 +410,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--secondary-txt-col);
     letter-spacing: 0.06em;
 
-    margin: 0;
+    
     padding: 0;
     /* margin-bottom: 4px; */
 }
@@ -371,6 +420,6 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 1.86;
     color: var(--primary-txt-col);
     
-    margin: 0;
+    
     padding: 0:
 }
