@@ -449,8 +449,8 @@ img {
 
     list-style: none;
 
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--primary-bg-col);
+    border: 1px solid var(--stroke-portfolio);
 
 }
 
