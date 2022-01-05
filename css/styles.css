@@ -145,17 +145,13 @@ img {
 }
 
 
-
-
-
-
-
-
 /* hero+button */
 /* Залит темный фон, чтобы были видны буквы */
 
 .hero {
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -204,6 +200,10 @@ img {
     padding-bottom: 94px;
 }
 
+.section:nth-child(3n){
+    padding-bottom: 0;
+}
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +218,7 @@ img {
     padding: 0;
 
     /* outline: 1px solid teal; */
-
+    width: 270px;
     flex-basis: calc(100%/4 - var(--gap));
     margin-left: var(--gap);
 }
@@ -297,6 +297,12 @@ img {
 .img-coworkers{
     margin-bottom: 30px;
 }
+
+.coworkers-list-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .coworkers-list-item {
 
     /* outline: 1px solid teal; */
@@ -314,14 +320,13 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.coworkers-list-item p{
-    margin-bottom: 30px;
-}
 
 /* футер */
 /* Залит темный фон, чтобы были видны буквы */
 .section-footer {
     background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logowhite {
@@ -393,21 +398,17 @@ img {
     background-color: var(--secondary-bg-col);
     color: var(--secondary-txt-col);
 
-    padding: 6px 22px;
-        
+    padding: 6px 22px;    
     
 }
 
 .button-list {
     margin-bottom: 50px;
-    
 
     list-style: none;
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: -8px;
-    min-width: 73px;
     
 }
 
