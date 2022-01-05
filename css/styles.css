@@ -294,10 +294,6 @@ img {
     margin-left: calc(-1 * var(--gap));
 }
 
-.img-coworkers{
-    margin-bottom: 30px;
-}
-
 .coworkers-list-content{
     padding-top: 30px;
     padding-bottom: 30px;
