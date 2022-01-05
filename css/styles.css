@@ -52,6 +52,11 @@ ul{
     padding: 0;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 /* logotype style */
 .logo {
     font-family: raleway;
@@ -232,10 +237,7 @@ ul{
 
 /* Чем мы занимаемся */
 
-img {
-    display: block;
-    width: 100%;
-}
+
 
 .whatwedo-list {
     display: flex;
@@ -444,7 +446,7 @@ img {
     list-style: none;
 
     background: var(--primary-bg-col);
-    border: 1px solid var(--stroke-portfolio);
+    
 
 }
 
@@ -452,8 +454,11 @@ img {
     text-decoration: none;
 }
 
-.imgthumb {
-    margin-bottom: 20px;
+.card-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid var(--stroke-portfolio);
+    border-top-style: none;
 }
 
 .example-list .title {
@@ -474,7 +479,6 @@ img {
     line-height: 1.86;
     color: var(--primary-txt-col);
 
-    margin-bottom: 20px;
 }
 
 
