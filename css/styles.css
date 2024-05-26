@@ -68,6 +68,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--aftertitle-color);
+
+  margin-bottom: 8px;
 }
 
 .title {
@@ -77,6 +79,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--title-color);
+
+  margin-bottom: 72px;
 }
 
 .visually-hidden {
@@ -236,6 +240,7 @@ margin-left: 40px;
 
 .features-list {
   display: flex;
+  column-gap: 24px;
 }
 
 .features-item {
@@ -254,12 +259,13 @@ margin-left: 40px;
 
 .team-list {
   display: flex;
+  row-gap: 0;
+  column-gap: 24px;
 }
 
 .team-item {
   background-color: var(--team-card-bgc);
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: 264px;
 
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -276,7 +282,9 @@ margin-left: 40px;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 24px;
+
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-item {
