@@ -68,8 +68,6 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--aftertitle-color);
-
-  margin-bottom: 8px;
 }
 
 .title {
@@ -109,13 +107,6 @@ img {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.button {
-  display: inline-block;
-
-  border-style: none;
-  border-color: none;
 }
 
 /* logo styles header */
@@ -185,8 +176,12 @@ img {
   display: flex;
 }
 
-.nav-item + .nav-item{
-margin-left: 40px;
+.nav-item{
+margin-right: 40px;
+}
+
+.nav-item:last-child{
+  margin-right: 0;
 }
 
 .auth-list {
@@ -194,15 +189,22 @@ margin-left: 40px;
   margin-left: auto;
 }
 
-.auth-item + .auth-item{
-  margin-left: 40px;
+.auth-item {
+margin-right: 40px;
 }
+
+.auth-item:last-child{
+  margin-right: 0;
+}
+
 
 /* section hero */
 
 .section.hero {
-  text-align: center;
+  
   background-color: var(--hero-bgc);
+padding: 188px 0;
+
 }
 
 .title.hero {
@@ -210,11 +212,15 @@ margin-left: 40px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--hero-txt-color);
+  text-align: center;
 
   margin-bottom: 40px;
-  min-width: 496px;
+  max-width: 496px;
+
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* hero button */
@@ -232,16 +238,21 @@ margin-left: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--button-iris);
 
-
-  text-align: center;
+  display: block;
+  height: 56px;
   min-width: 169px;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  
+  margin: 0 auto;
 }
 
 /* section features */
 
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-item {
@@ -261,7 +272,7 @@ margin-left: 40px;
 .team-list {
   display: flex;
   row-gap: 0;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .team-item {
@@ -289,17 +300,20 @@ margin-left: 40px;
 }
 
 .portfolio-item {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-text{
   color: var(--txt-general-color);
 }
 
+.portfolio.aftertitle{
+  margin-bottom: 8px;
+}
+
 .portfolio-item-text {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
 }
 
@@ -312,7 +326,7 @@ margin-left: 40px;
 }
 
 .logo-footer{
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
