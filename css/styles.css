@@ -269,6 +269,10 @@ padding: 188px 0;
   background-color: var(--team-bgc);
 }
 
+.team.aftertitle{
+  margin-bottom: 8px;
+}
+
 .team-list {
   display: flex;
   row-gap: 0;
