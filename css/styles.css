@@ -214,6 +214,7 @@ margin-left: 40px;
   color: var(--hero-txt-color);
 
   margin-bottom: 40px;
+  min-width: 496px;
 }
 
 /* hero button */
