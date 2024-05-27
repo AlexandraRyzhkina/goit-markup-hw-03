@@ -124,13 +124,15 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  color: var(--logo-iris);
+}
+
+.nav-logo{
   padding-top: 24px;
   padding-bottom: 24px;
 
   margin-right: 76px;
-  color: var(--logo-iris);
 }
-
 
 .logo-studio {
   color: var(--logo-studio-header);
